@@ -11,6 +11,8 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { ThemeModule } from './@theme/theme.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { TwoLibModule } from 'dist/libs/two-lib';
+import { MylibModule } from '@reclamador/mylib';
 
 @NgModule({
   declarations: [AppComponent],
@@ -23,7 +25,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     NbThemeModule.forRoot({ name: 'corporate' }),
     NbLayoutModule,
     AppRoutingModule,
-    PagesModule
+    PagesModule,
+    TwoLibModule,
+    MylibModule
   ],
   providers: [{ provide: APP_BASE_HREF, useValue: '/' }],
   bootstrap: [AppComponent]

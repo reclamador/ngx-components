@@ -1,16 +1,23 @@
+import { TestComponent } from './pages/test/test.component';
 import { NgModule } from '@angular/core';
 
 import { ExtraOptions, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: 'pages', loadChildren: './pages/pages.module#PagesModule' },
-  { path: '', redirectTo: 'pages', pathMatch: 'full' },
-  { path: '**', redirectTo: 'pages' },
+  {
+    path: 'pages',
+    children: [{
+      path: 'test',
+      component: TestComponent
+    }]
+  },
+  { path: '', redirectTo: 'pages/test', pathMatch: 'full' },
+  { path: '**', redirectTo: '/' },
 ];
 
 
 const config: ExtraOptions = {
-  useHash: true,
+  useHash: false,
 };
 
 @NgModule({

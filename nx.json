@@ -1,5 +1,5 @@
 {
-  "npmScope": "@reclamador",
+  "npmScope": "reclamador",
   "implicitDependencies": {
     "angular.json": "*",
     "package.json": "*",
@@ -18,6 +18,9 @@
       "tags": []
     },
     "demo-e2e": {
+      "tags": []
+    },
+    "mylib": {
       "tags": []
     }
   }

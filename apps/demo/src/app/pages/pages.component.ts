@@ -4,9 +4,7 @@ import { Component } from '@angular/core';
   selector: 'demo-ngx-pages',
   styleUrls: [],
   template: `
-    <demo-sample-layout>
-      <router-outlet></router-outlet>
-    </demo-sample-layout>
+    <demo-sample-layout></demo-sample-layout>
   `,
 })
 export class PagesComponent {

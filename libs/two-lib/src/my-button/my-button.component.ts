@@ -1,15 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
-  selector: 'reclamador-my-button',
+  selector: 'two-lib-button',
   templateUrl: './my-button.component.html',
-  styles: ['./my-button.component.css']
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class MyButtonComponent implements OnInit {
+export class TwoLibButtonComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

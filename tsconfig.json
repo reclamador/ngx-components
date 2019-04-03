@@ -16,9 +16,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@reclamador/libs/one-lib": ["libs/one-lib/src/index.ts"],
-      "@reclamador/libs/two-lib": ["libs/two-lib/src/index.ts"],
-      "@@reclamador/button": ["libs/button/src/index.ts"]
+      "@reclamador/one-lib": ["libs/one-lib/src/index.ts"],
+      "@reclamador/two-lib": ["libs/two-lib/src/index.ts"],
+      "@reclamador/mylib": ["libs/mylib/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

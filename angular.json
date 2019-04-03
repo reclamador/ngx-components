@@ -38,8 +38,15 @@
       "root": "libs/two-lib",
       "sourceRoot": "libs/two-lib/src",
       "projectType": "library",
-      "prefix": "reclamador",
+      "prefix": "two-lib",
       "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "libs/two-lib/tsconfig.lib.json",
+            "project": "libs/two-lib/ng-package.json"
+          }
+        },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
@@ -51,11 +58,11 @@
           }
         },
         "test": {
-          "builder": "@nrwl/builders:jest",
+          "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "jestConfig": "libs/two-lib/jest.config.js",
+            "main": "libs/two-lib/src/test.ts",
             "tsConfig": "libs/two-lib/tsconfig.spec.json",
-            "setupFile": "libs/two-lib/src/test-setup.ts"
+            "karmaConfig": "libs/two-lib/karma.conf.js"
           }
         }
       },
@@ -184,6 +191,44 @@
             "tsConfig": "apps/demo-e2e/tsconfig.e2e.json",
             "exclude": ["**/node_modules/**"]
           }
+        }
+      }
+    },
+    "mylib": {
+      "root": "libs/mylib",
+      "sourceRoot": "libs/mylib/src",
+      "projectType": "library",
+      "prefix": "mylib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "libs/mylib/tsconfig.lib.json",
+            "project": "libs/mylib/ng-package.json"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/mylib/tsconfig.lib.json",
+              "libs/mylib/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**"]
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "libs/mylib/src/test.ts",
+            "tsConfig": "libs/mylib/tsconfig.spec.json",
+            "karmaConfig": "libs/mylib/karma.conf.js"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/schematics:component": {
+          "styleext": "scss"
         }
       }
     }
