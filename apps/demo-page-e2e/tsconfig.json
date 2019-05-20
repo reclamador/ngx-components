@@ -1,7 +1,7 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "types": ["jasmine"]
+    "types": ["jasmine", "jasminewd2"]
   },
   "include": ["**/*.ts"]
 }

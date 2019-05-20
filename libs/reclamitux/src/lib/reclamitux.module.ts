@@ -4,6 +4,7 @@ import { ReclamituxShowcaseComponent } from './reclamitux-showcase/reclamitux-sh
 
 @NgModule({
   imports: [CommonModule],
-  declarations: [ReclamituxShowcaseComponent]
+  declarations: [ReclamituxShowcaseComponent],
+  exports: [ReclamituxShowcaseComponent]
 })
 export class ReclamituxModule {}
