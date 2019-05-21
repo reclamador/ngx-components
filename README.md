@@ -1,5 +1,13 @@
 # NgxComponents
 
+Reclamador angular components
+
+## Demo
+Visita la página de <a href="https://reclamador.github.io/ngx-components/dist/apps/demo-page/">demo</a>.
+
+## Development serve
+Run `ng serve --project=demo-page` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) using [Nrwl Nx](https://nrwl.io/nx).
 
 ## Nrwl Extensions for Angular (Nx)
