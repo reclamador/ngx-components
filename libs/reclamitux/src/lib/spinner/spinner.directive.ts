@@ -23,7 +23,10 @@ export class SpinnerDirective implements OnInit {
   private shouldShow = false;
 
   @HostBinding('class.nb-spinner-container') isSpinnerExist = false;
-  @Input('spinnerMessage') spinnerMessage: string;
+  @Input('spinnerMessage') message: string;
+  @Input('spinnerColor') color: string;
+  @Input('spinnerFade') opacity: boolean;
+  @Input('spinnerFixed') fixed: boolean;
   @Input('ngxSpinner') set spinner(val: boolean) {
     if (this.componentFactory) {
       if (val) {
@@ -72,6 +75,9 @@ export class SpinnerDirective implements OnInit {
   }
 
   setInstanceInputs(instance: SpinnerComponent) {
-    typeof this.spinnerMessage !== 'undefined' && (instance.message = this.spinnerMessage);
+    typeof this.message !== 'undefined' && (instance.message = this.message);
+    typeof this.color !== 'undefined' && (instance.color = this.color);
+    instance.opacity = this.opacity;
+    instance.fixed = this.fixed;
   }
 }
