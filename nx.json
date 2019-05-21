@@ -16,6 +16,15 @@
     },
     "two-lib": {
       "tags": []
+    },
+    "reclamitux": {
+      "tags": []
+    },
+    "demo-page": {
+      "tags": []
+    },
+    "demo-page-e2e": {
+      "tags": []
     }
   }
 }
