@@ -1,0 +1,21 @@
+{
+  "name": "@reclamador/reclamitux",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^7.2.0",
+    "@angular/core": "^7.2.0"
+  },
+  "main": "bundles/reclamador-reclamitux.umd.js",
+  "module": "fesm5/reclamador-reclamitux.js",
+  "es2015": "fesm2015/reclamador-reclamitux.js",
+  "esm5": "esm5/reclamador-reclamitux.js",
+  "esm2015": "esm2015/reclamador-reclamitux.js",
+  "fesm5": "fesm5/reclamador-reclamitux.js",
+  "fesm2015": "fesm2015/reclamador-reclamitux.js",
+  "typings": "reclamador-reclamitux.d.ts",
+  "metadata": "reclamador-reclamitux.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}

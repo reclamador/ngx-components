@@ -1,0 +1,10 @@
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * Generated bundle index. Do not edit.
+ */
+export { ReclamituxModule } from './index';
+export { ReclamituxShowcaseComponent as ɵa } from './lib/reclamitux-showcase/reclamitux-showcase.component';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicmVjbGFtYWRvci1yZWNsYW1pdHV4LmpzIiwic291cmNlUm9vdCI6Im5nOi8vQHJlY2xhbWFkb3IvcmVjbGFtaXR1eC8iLCJzb3VyY2VzIjpbInJlY2xhbWFkb3ItcmVjbGFtaXR1eC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7O0FBSUEsaUNBQWMsU0FBUyxDQUFDO0FBRXhCLE9BQU8sRUFBQywyQkFBMkIsSUFBSSxFQUFFLEVBQUMsTUFBTSx5REFBeUQsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbIi8qKlxuICogR2VuZXJhdGVkIGJ1bmRsZSBpbmRleC4gRG8gbm90IGVkaXQuXG4gKi9cblxuZXhwb3J0ICogZnJvbSAnLi9pbmRleCc7XG5cbmV4cG9ydCB7UmVjbGFtaXR1eFNob3djYXNlQ29tcG9uZW50IGFzIMm1YX0gZnJvbSAnLi9saWIvcmVjbGFtaXR1eC1zaG93Y2FzZS9yZWNsYW1pdHV4LXNob3djYXNlLmNvbXBvbmVudCc7Il19
