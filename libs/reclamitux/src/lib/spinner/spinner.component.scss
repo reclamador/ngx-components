@@ -1,13 +1,9 @@
 // This is included inline in index.html, here as a reference to changeit
 $spinner-elements: 12;
 $spinner-time: 3;
-$soft-blue: #6699ff; // ñaped
 
-.home-spinner {
-  opacity: 0.48;
-  background: white;
-
-  position: fixed;
+:host {
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -15,38 +11,58 @@ $soft-blue: #6699ff; // ñaped
   overflow: hidden;
   z-index: 100;
 
-  span {
-    display: block;
-    width: 14px;
-    height: 26px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin-top: -13px;
-    margin-left: -8px;
-    border-radius: 5px;
-    background-color: $soft-blue;
-    opacity: 0;
-    animation: fade #{$spinner-time}s linear infinite;
+  &.fade .home-spinner {
+    opacity: 0.48
   }
 
-  @for $i from 0 through $spinner-elements {
-    span:nth-child(#{$i}) {
-      transform: rotate(#{360*$i/$spinner-elements}deg) translateY(56px);
-      animation-delay: #{$i*$spinner-time/$spinner-elements}s;
+  &.fixed {
+    .home-spinner, .message {
+      position: fixed;
     }
   }
-}
 
-.message {
-  position: fixed;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  margin-top: 90px;
-  overflow: hidden;
-  z-index: 100;
-  text-align: center;
+  .home-spinner {
+    opacity: 1;
+    background: white;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    span {
+      display: block;
+      width: 14px;
+      height: 26px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-top: -13px;
+      margin-left: -8px;
+      border-radius: 5px;
+      opacity: 0;
+      animation: fade #{$spinner-time}s linear infinite;
+    }
+
+    @for $i from 0 through $spinner-elements {
+      span:nth-child(#{$i}) {
+        transform: rotate(#{360*$i/$spinner-elements}deg) translateY(56px);
+        animation-delay: #{$i*$spinner-time/$spinner-elements}s;
+      }
+    }
+  }
+
+  .message {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    margin-top: 90px;
+    overflow: hidden;
+    z-index: 100;
+    text-align: center;
+  }
 }
 
 @keyframes fade {

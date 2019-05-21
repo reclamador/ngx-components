@@ -28,7 +28,10 @@
     
     <ngx-reclamitux-showcase></ngx-reclamitux-showcase>
     <div style="height:300px"
-      ngxSpinner="True"
+      [ngxSpinner]="true"
+      [spinnerFade]="true"
+      [spinnerFixed]="false"
+      spinnerColor="#ccc"
       spinnerMessage="Some spinner here">
     </div>
   </nb-layout-column>
