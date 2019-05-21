@@ -11,7 +11,7 @@ $spinner-time: 3;
   overflow: hidden;
   z-index: 100;
 
-  &.fade .home-spinner {
+  &.faded .home-spinner {
     opacity: 0.48
   }
 

@@ -1,42 +1,31 @@
 # NgxComponents
+Reclamador angular component library
+###### Project generated with [Angular CLI](https://github.com/angular/angular-cli) using [Nrwl Nx](https://nrwl.io/nx). 
 
-Reclamador angular components
+The repository contains the libray (reclamitux) a test page app (demo-page) and a build enviroment for github pages.
 
 ## Demo
-Visita la página de <a href="https://reclamador.github.io/ngx-components/dist/apps/demo-page/">demo</a>.
-
-## Development serve
-Run `ng serve --project=demo-page` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) using [Nrwl Nx](https://nrwl.io/nx).
-
-## Nrwl Extensions for Angular (Nx)
-
-<a href="https://nrwl.io/nx"><img src="https://preview.ibb.co/mW6sdw/nx_logo.png"></a>
-
-Nx is an open source toolkit for enterprise Angular applications.
-
-Nx is designed to help you create and build enterprise grade Angular applications. It provides an opinionated approach to application project structure and patterns.
-
-## Quick Start & Documentation
-
-[Watch a 5-minute video on how to get started with Nx.](http://nrwl.io/nx)
-
-## Generate your first application
-
-Run `ng generate app myapp` to generate an application. When using Nx, you can create multiple applications and libraries in the same CLI workspace. Read more [here](http://nrwl.io/nx).
+Visit our [demo page](https://reclamador.github.io/ngx-components/dist/apps/demo-page/).
 
 ## Development server
+Run `ng serve --project=demo-page` to launch the demo-page server and navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-Run `ng serve --project=myapp` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name --project=myapp` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Create new blocks
+You can create add new components to the library with `ng g component COMPONENT-NAME --project=reclamitux` or some other block with `ng generate directive|pipe|service|class|guard|interface|enum|module --project=reclamitux`.
 
 ## Build
 
 Run `ng build --project=myapp` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+
+## Documentation
+
+The project demo page is served with github pages. The code is in the branch **gh-pages** and it's only suppose to keep the dist changes. The process to update the documentation should be like this:
+* Deploy the changes to **master**
+* Merge the **master** branch into **gh-pages**
+* Build the new version of the page
+* Commit the changes and upload them to the repositorio
+
+The github page updates instantly.
 
 ## Running unit tests
 
@@ -46,7 +35,3 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

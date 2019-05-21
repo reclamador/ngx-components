@@ -14,7 +14,7 @@ import { Component, Input, HostBinding } from '@angular/core';
   styleUrls: ['./spinner.component.scss']
 })
 export class SpinnerComponent {
-  @HostBinding('class.fade') get fade() {
+  @HostBinding('class.faded') get fade() {
     return this.opacity;
   };
   @HostBinding('class.fixed') get fix() {
