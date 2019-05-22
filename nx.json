@@ -1,5 +1,5 @@
 {
-  "npmScope": "@reclamador",
+  "npmScope": "reclamador",
   "implicitDependencies": {
     "angular.json": "*",
     "package.json": "*",
@@ -8,9 +8,6 @@
     "nx.json": "*"
   },
   "projects": {
-    "apps-demo": {
-      "tags": []
-    },
     "one-lib": {
       "tags": []
     },
