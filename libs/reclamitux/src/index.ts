@@ -1,1 +1,4 @@
-export * from './lib/reclamitux.module';
+export * from './reclamitux.module';
+
+export * from './spinner';
+export * from './switch';

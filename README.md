@@ -22,8 +22,8 @@ Run `ng build --project=myapp` to build the project. The build artifacts will be
 The project demo page is served with github pages. The code is in the branch **gh-pages** and it's only suppose to keep the dist changes. The process to update the documentation should be like this:
 * Deploy the changes to **master**
 * Merge the **master** branch into **gh-pages**
-* Build the new version of the page
-* Commit the changes and upload them to the repositorio
+* Build the new version of the page with the command `npm build-docs`
+* Commit the changes and upload them to the repository
 
 The github page updates instantly.
 
