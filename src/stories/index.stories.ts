@@ -6,7 +6,7 @@ import { Welcome, Button } from '@storybook/angular/demo';
 import {
   SpinnerComponent,
   SwitchComponent
-} from '../../libs/reclamitux/src/reclamitux.module';
+} from '../../libs/reclamitux/src';
 
 storiesOf('Welcome', module).add('to Storybook', () => ({
   component: Welcome,

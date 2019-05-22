@@ -8,9 +8,6 @@ import { SpinnerDirective } from './spinner/spinner.directive';
 
 import { SwitchModule } from './switch/index';
 
-export * from './spinner';
-export * from './switch';
-
 @NgModule({
   imports: [
     CommonModule,
