@@ -6,7 +6,7 @@ import { Welcome, Button } from '@storybook/angular/demo';
 import {
   SpinnerComponent,
   SwitchComponent
-} from '../../libs/reclamitux/src/index';
+} from '../../libs/reclamitux/src/reclamitux.module';
 
 storiesOf('Welcome', module).add('to Storybook', () => ({
   component: Welcome,
@@ -48,8 +48,7 @@ storiesOf('Reclamador Switch', module)
     'default',
     () => ({
       component: SwitchComponent,
-      props: {
-      }
+      props: {}
     }),
     { notes: 'Componente switch para acciones unitarias sin etiquetas' }
   )
@@ -89,12 +88,7 @@ storiesOf('Reclamador Switch', module)
     { notes: 'Componente switch para acciones unitarias sin etiquetas' }
   );
 
-storiesOf('Reclamador Spinner', module)
-.add(
-  'basic',
-  () => ({
-    component: SpinnerComponent,
-    props: {
-    }
-  })
-);
+storiesOf('Reclamador Spinner', module).add('basic', () => ({
+  component: SpinnerComponent,
+  props: {}
+}));
