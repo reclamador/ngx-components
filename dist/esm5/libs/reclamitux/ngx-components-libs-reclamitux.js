@@ -1,0 +1,11 @@
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * Generated bundle index. Do not edit.
+ */
+export { ReclamituxModule, SpinnerComponent, SpinnerDirective } from './index';
+export { SpinnerComponent as ɵa } from './spinner/spinner.component';
+export { SpinnerDirective as ɵb } from './spinner/spinner.directive';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibmd4LWNvbXBvbmVudHMtbGlicy1yZWNsYW1pdHV4LmpzIiwic291cmNlUm9vdCI6Im5nOi8vbmd4LWNvbXBvbmVudHMvbGlicy9yZWNsYW1pdHV4LyIsInNvdXJjZXMiOlsibmd4LWNvbXBvbmVudHMtbGlicy1yZWNsYW1pdHV4LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7QUFJQSxxRUFBYyxTQUFTLENBQUM7QUFFeEIsT0FBTyxFQUFDLGdCQUFnQixJQUFJLEVBQUUsRUFBQyxNQUFNLDZCQUE2QixDQUFDO0FBQ25FLE9BQU8sRUFBQyxnQkFBZ0IsSUFBSSxFQUFFLEVBQUMsTUFBTSw2QkFBNkIsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbIi8qKlxuICogR2VuZXJhdGVkIGJ1bmRsZSBpbmRleC4gRG8gbm90IGVkaXQuXG4gKi9cblxuZXhwb3J0ICogZnJvbSAnLi9pbmRleCc7XG5cbmV4cG9ydCB7U3Bpbm5lckNvbXBvbmVudCBhcyDJtWF9IGZyb20gJy4vc3Bpbm5lci9zcGlubmVyLmNvbXBvbmVudCc7XG5leHBvcnQge1NwaW5uZXJEaXJlY3RpdmUgYXMgybVifSBmcm9tICcuL3NwaW5uZXIvc3Bpbm5lci5kaXJlY3RpdmUnOyJdfQ==

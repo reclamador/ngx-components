@@ -1,0 +1,7 @@
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+export { SpinnerComponent } from './spinner.component';
+export { SpinnerDirective } from './spinner.directive';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290Ijoibmc6Ly9uZ3gtY29tcG9uZW50cy9saWJzL3JlY2xhbWl0dXgvIiwic291cmNlcyI6WyJzcGlubmVyL2luZGV4LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7QUFBQSxpQ0FBYyxxQkFBcUIsQ0FBQztBQUNwQyxpQ0FBYyxxQkFBcUIsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCAqIGZyb20gJy4vc3Bpbm5lci5jb21wb25lbnQnO1xuZXhwb3J0ICogZnJvbSAnLi9zcGlubmVyLmRpcmVjdGl2ZSc7XG4iXX0=

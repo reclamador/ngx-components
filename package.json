@@ -7,7 +7,7 @@
     "start": "ng serve",
     "demo": "ng serve --project=demo",
     "build": "ng build",
-    "build-docs": "ng build --project=demo-page --base-href /ngx-components/dist/apps/demo-page/",
+    "build-docs": "ng build --project=demo-page --base-href dist",
     "test": "ng test",
     "lint": "./node_modules/.bin/nx lint && ng lint",
     "e2e": "ng e2e",
