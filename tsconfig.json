@@ -16,9 +16,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@reclamador/libs/one-lib": ["libs/one-lib/src/index.ts"],
-      "@reclamador/libs/two-lib": ["libs/two-lib/src/index.ts"],
-      "@reclamador/reclamitux": ["libs/reclamitux/src/index.ts"]
+      "@reclamador/reclamitux": ["./libs/reclamitux"]
     }
   },
   "exclude": ["node_modules", "tmp"]

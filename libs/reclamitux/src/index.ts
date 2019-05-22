@@ -1,1 +1,1 @@
-export * from './lib/reclamitux.module';
+export * from './reclamitux.module';
