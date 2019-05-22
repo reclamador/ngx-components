@@ -1,0 +1,21 @@
+@import 'themes';
+
+@import '~@nebular/theme/styles/globals';
+@import "~bootstrap/scss/bootstrap";
+@import '~@nebular/bootstrap/styles/globals';
+
+
+@include nb-install() {
+  @include nb-theme-global();
+  @include nb-bootstrap-global();
+
+  body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+  }
+};

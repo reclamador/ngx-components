@@ -14,13 +14,13 @@
     "two-lib": {
       "tags": []
     },
-    "demo": {
+    "reclamitux": {
       "tags": []
     },
-    "demo-e2e": {
+    "demo-page": {
       "tags": []
     },
-    "mylib": {
+    "demo-page-e2e": {
       "tags": []
     }
   }

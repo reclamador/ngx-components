@@ -1,0 +1,14 @@
+@import '~@nebular/theme/styles/theming';
+@import '~@nebular/theme/styles/themes/default';
+
+@import 'variables';
+
+$nb-themes: nb-register-theme((
+  font-main: unquote("'Source Sans Pro', sans-serif"),
+  font-secondary: font-main,
+  link-color:  color-primary,
+  link-color-hover:  color-primary,
+  link-color-visited: color-primary,
+
+  font-weight-normal: $base-font-width,
+), default, default);

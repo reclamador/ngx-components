@@ -1,9 +1,9 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "outDir": "../../dist/out-tsc/libs/two-lib",
+    "outDir": "../../dist/out-tsc/apps/demo-page/",
     "types": ["jasmine", "node"]
   },
-  "files": ["src/test.ts"],
+  "files": ["src/test.ts", "src/polyfills.ts"],
   "include": ["**/*.spec.ts", "**/*.d.ts"]
 }

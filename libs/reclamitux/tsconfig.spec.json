@@ -1,7 +1,7 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "outDir": "../../../dist/out-tsc/libs/one-lib",
+    "outDir": "../../dist/out-tsc/libs/reclamitux",
     "types": ["jasmine", "node"]
   },
   "files": ["src/test.ts"],

@@ -1,0 +1,46 @@
+<nb-layout>
+  <nb-layout-column>
+    <nb-card>
+      <nb-card-header>
+        <h1 class="mb-2" style="line-height: 1.2em;">
+          <img style="width: 300px;" class="mb-4"
+            src="https://reclamador-static.s3.amazonaws.com/static/web/images/logo-reclamador.692ed3f5445c.svg"/> component library</h1>
+        <h6>Built with Angular CLI app and Nrwl Nx!</h6>
+      </nb-card-header>
+      <nb-card-body>
+
+        <!--ngx-reclamitux-showcase></ngx-reclamitux-showcase-->
+
+        <h2>Spinner component:</h2>
+        <p class="mb-1">Configurable options:</p>
+        <ul>
+          <li>Message text.</li>
+          <li>Spinner color.</li>
+          <li>Fixed full page or block contained layout.</li>
+          <li>Use it as component or directive.</li>
+        </ul>
+
+        <div class="row">
+          <div class="col"
+            style="height:300px"
+            [ngxSpinner]="true"
+            [spinnerFade]="false"
+            [spinnerFixed]="false"
+            spinnerColor="red"
+            spinnerMessage="Spinner opaco">
+          </div>
+
+          <div class="col"
+            style="height: 300px;"
+            [ngxSpinner]="true"
+            [spinnerFade]="true"
+            [spinnerFixed]="false"
+            spinnerColor="red"
+            spinnerMessage="Some spinner here">
+            <p class="mt-5 pt-5 h2">Spinner con transparencia</p>
+          </div>
+        </div>
+      </nb-card-body>
+    </nb-card>
+  </nb-layout-column>
+</nb-layout>

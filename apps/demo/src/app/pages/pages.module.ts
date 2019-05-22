@@ -1,10 +1,10 @@
-import { MylibModule } from '@reclamador/mylib';
+import { MylibModule } from '../../../../../libs/mylib/src';
 import { NgModule } from '@angular/core';
 
 import { PagesComponent } from './pages.component';
 import { ThemeModule } from '../@theme/theme.module';
 import { TestComponent } from './test/test.component';
-import { TwoLibModule } from 'dist/libs/two-lib';
+import { TwoLibModule } from '../../../../../libs/two-lib/src';
 
 const PAGES_COMPONENTS = [
   PagesComponent,

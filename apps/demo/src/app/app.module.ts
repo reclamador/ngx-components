@@ -11,8 +11,8 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { ThemeModule } from './@theme/theme.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { TwoLibModule } from 'dist/libs/two-lib';
-import { MylibModule } from '@reclamador/mylib';
+import { TwoLibModule } from '../../../../libs/two-lib/src';
+import { MylibModule } from '../../../../libs/mylib/src';
 
 @NgModule({
   declarations: [AppComponent],

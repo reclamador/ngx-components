@@ -1,14 +1,14 @@
 import { async, TestBed } from '@angular/core/testing';
-import { TwoLibModule } from './two-lib.module';
+import { reclamituxModule } from './reclamitux.module';
 
-describe('LibsTwoLibModule', () => {
+describe('reclamituxModule', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [TwoLibModule]
+      imports: [reclamituxModule]
     }).compileComponents();
   }));
 
   it('should create', () => {
-    expect(TwoLibModule).toBeDefined();
+    expect(reclamituxModule).toBeDefined();
   });
 });
