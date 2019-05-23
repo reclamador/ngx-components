@@ -18,7 +18,7 @@
     "paths": {
       "@reclamador/libs/mylib": ["libs/mylib/src/index.ts"],
       "@reclamador/libs/two-lib": ["libs/two-lib/src/index.ts"],
-      "@reclamador/reclamitux": ["libs/reclamitux/src/index.ts"]
+      "@reclamador/reclamitux": ["./libs/reclamitux"],
     }
   },
   "exclude": ["node_modules", "tmp"]
