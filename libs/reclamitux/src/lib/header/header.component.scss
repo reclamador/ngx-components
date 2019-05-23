@@ -1,0 +1,129 @@
+@import '~bootstrap/scss/mixins/breakpoints';
+@import '~@nebular/theme/styles/global/breakpoints';
+
+// @include nb-install-component() {
+//   display: flex;
+//   justify-content: space-between;
+//   width: 100%;
+
+//   .left {
+//     display: flex;
+//     width: 100%;
+//     order: 0;
+//     flex-direction: row;
+//   }
+//   .right {
+//     order: 1;
+//     flex-direction: row-reverse;
+//   }
+
+//   .logo-containter {
+//     display: flex;
+//     align-items: center;
+//     width: calc(#{nb-theme(sidebar-width)} - #{nb-theme(header-padding)});
+//   }
+
+//   .control-item {
+//     display: block;
+//   }
+
+//   .header-container {
+//     display: flex;
+//     align-items: center;
+//     width: auto;
+//     color:#fff;
+
+//     .navigation {
+//       @include nb-ltr(padding-right, nb-theme(padding));
+//       @include nb-rtl(padding-left, nb-theme(padding));
+//       font-size: 2.5rem;
+//       text-decoration: none;
+//       color:#fff;
+
+//       i {
+//         display: block;
+//       }
+
+//     }
+
+//     .logo {
+//       padding: 0 nb-theme(padding);
+//       font-size: 1.75rem;
+//       font-weight: nb-theme(font-weight-bolder);
+//       @include nb-ltr(border-left, 1px solid nb-theme(separator));
+//       @include nb-rtl(border-right, 1px solid nb-theme(separator));
+//       white-space: nowrap;
+
+//       img {
+//         width: 150px;
+//         height: 38px;
+//       }
+
+//       .version {
+//         color: #ddd;
+//         padding-left: 15px;
+//         font-size: 1rem;
+//         vertical-align: text-bottom;
+//       }
+//     }
+//   }
+
+//   @include nb-for-theme(default) {
+//     $menu-action-separator-color: #3f4550;
+
+//     nb-action {
+//       @include nb-ltr(border-left-color, $menu-action-separator-color);
+//       @include nb-rtl(border-right-color, $menu-action-separator-color);
+//     }
+
+//     .header-container .logo {
+//       @include nb-ltr(border, none);
+//       @include nb-rtl(border, none);
+//     }
+//   }
+
+//   @include media-breakpoint-down(md) {
+
+//     nb-action:not(.toggle-settings) {
+//       border: none;
+//     }
+
+//     .control-item {
+//       display: none;
+//     }
+
+//     .toggle-settings {
+//       padding: 0;
+//     }
+//   }
+
+//   @include media-breakpoint-down(sm) {
+
+//     nb-user /deep/ .user-name {
+//       display: none;
+//     }
+//   }
+
+//   @include media-breakpoint-down(is) {
+
+//     .header-container {
+//       .logo {
+//         font-size: 1.25rem;
+//       }
+//     }
+
+//     .toggle-settings {
+//       display: none;
+//     }
+
+//     nb-action:not(.toggle-settings) {
+//       padding: 0;
+//     }
+//   }
+
+//   @include media-breakpoint-down(xs) {
+//     .right /deep/ {
+//       display: none;
+//     }
+//   }
+// }
