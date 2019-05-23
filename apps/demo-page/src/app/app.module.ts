@@ -6,7 +6,7 @@ import { NbThemeModule, NbLayoutModule } from '@nebular/theme';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { ReclamituxModule } from './../../../../libs/reclamitux/src/lib/reclamitux.module';
+import { ReclamituxModule } from './../../../../libs/reclamitux/src';
 
 @NgModule({
   declarations: [AppComponent],

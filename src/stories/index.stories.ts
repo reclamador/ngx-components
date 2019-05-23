@@ -88,7 +88,18 @@ storiesOf('Reclamador Switch', module)
     { notes: 'Componente switch para acciones unitarias sin etiquetas' }
   );
 
-storiesOf('Reclamador Spinner', module).add('basic', () => ({
-  component: SpinnerComponent,
-  props: {}
-}));
+storiesOf('Reclamador Spinner', module)
+  .add('basic', () => ({
+    component: SpinnerComponent,
+    props: {}
+  }))
+  .add(
+    'with transparence',
+    () => ({
+      component: SpinnerComponent,
+      props: {
+        opacity: true
+      }
+    })
+  );
+

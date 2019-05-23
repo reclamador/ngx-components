@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { NbCardModule, NbAccordionModule, NbSelectModule } from '@nebular/theme';
+import { NbCardModule, NbAccordionModule, NbSelectModule, NbMenuModule, NbActionsModule, NbUserModule, NbContextMenuModule } from '@nebular/theme';
 
-import { SpinnerComponent } from './spinner/spinner.component';
-import { SpinnerDirective } from './spinner/spinner.directive';
+import { SpinnerComponent } from './lib/spinner/spinner.component';
+import { SpinnerDirective } from './lib/spinner/spinner.directive';
 
-import { SwitchModule } from './switch/index';
+import { SwitchModule } from './lib/switch/index';
+import { HeaderModule } from './lib/header/header.module';
 
 @NgModule({
   imports: [
@@ -14,7 +15,12 @@ import { SwitchModule } from './switch/index';
     NbCardModule,
     NbAccordionModule,
     SwitchModule,
-    NbSelectModule
+    NbSelectModule,
+    HeaderModule,
+    NbMenuModule,
+    NbActionsModule,
+    NbUserModule,
+    NbContextMenuModule
   ],
   declarations: [
     SpinnerComponent,

@@ -5,8 +5,9 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "demo": "ng serve --project=demo",
+    "demo": "ng serve --project=demo-page",
     "build": "ng build",
+    "build:lib": "ng-packagr",
     "build-docs": "ng build --project=demo-page --base-href /ngx-components/dist/apps/demo-page/",
     "test": "ng test",
     "lint": "./node_modules/.bin/nx lint && ng lint",
@@ -28,7 +29,6 @@
     "dep-graph": "./node_modules/.bin/nx dep-graph",
     "help": "./node_modules/.bin/nx help",
     "storybook": "start-storybook -p 6006",
-    "build:lib": "ng-packagr",
     "build-storybook": "build-storybook -o dist/storybook                                                                             "
   },
   "private": true,
@@ -71,6 +71,9 @@
     "@schematics/angular": "^7.3.9",
     "@storybook/addon-actions": "^5.0.11",
     "@storybook/angular": "^5.0.11",
+    "@storybook/addon-notes": "^5.0.11",
+    "@storybook/addon-links": "^5.0.11",
+    "@storybook/addons": "^5.0.11",
     "@types/jasmine": "~2.8.6",
     "@types/jasminewd2": "~2.0.3",
     "@types/jest": "23.0.0",
@@ -95,9 +98,6 @@
     "tsickle": "^0.34.0",
     "tslib": "^1.9.0",
     "tslint": "~5.11.0",
-    "typescript": "^3.2.0",
-    "@storybook/addon-notes": "^5.0.11",
-    "@storybook/addon-links": "^5.0.11",
-    "@storybook/addons": "^5.0.11"
+    "typescript": "^3.2.0"
   }
 }
