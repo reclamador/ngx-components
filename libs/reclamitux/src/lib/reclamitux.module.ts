@@ -7,7 +7,7 @@ import { ReclamituxShowcaseComponent } from './reclamitux-showcase/reclamitux-sh
 import { SpinnerComponent } from './spinner/spinner.component';
 import { SpinnerDirective } from './spinner/spinner.directive';
 
-import { SwitchModule } from './switch/index';
+import { SwitchModule } from './switch/switch.module';
 
 @NgModule({
   imports: [
