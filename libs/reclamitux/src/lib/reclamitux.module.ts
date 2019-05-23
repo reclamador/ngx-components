@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { NbCardModule, NbAccordionModule, NbSelectModule } from '@nebular/theme';
+import { NbCardModule, NbAccordionModule, NbSelectModule, NbMenuModule, NbActionsModule, NbUserModule, NbContextMenuModule } from '@nebular/theme';
 
+import { ReclamituxShowcaseComponent } from './reclamitux-showcase/reclamitux-showcase.component';
 import { SpinnerComponent } from './spinner/spinner.component';
 import { SpinnerDirective } from './spinner/spinner.directive';
 
-import { SwitchModule } from './switch/index';
+import { SwitchModule } from './switch/switch.module';
 
 @NgModule({
   imports: [
@@ -14,13 +15,19 @@ import { SwitchModule } from './switch/index';
     NbCardModule,
     NbAccordionModule,
     SwitchModule,
-    NbSelectModule
+    NbSelectModule,
+    NbMenuModule,
+    NbActionsModule,
+    NbUserModule,
+    NbContextMenuModule
   ],
   declarations: [
+    ReclamituxShowcaseComponent,
     SpinnerComponent,
     SpinnerDirective
   ],
   exports: [
+    ReclamituxShowcaseComponent,
     NbCardModule,
     NbAccordionModule,
     NbSelectModule,
