@@ -8,6 +8,24 @@
         <h6>Built with Angular CLI app and Nrwl Nx!</h6>
       </nb-card-header>
       <nb-card-body>
+        <h2>Multiselect component:</h2>
+        <p class="mb-1">Configurable options:</p>
+        <ul>
+          <li>Simple/multiple selection.</li>
+          <li>Require options.</li>
+          <li>Editable elemnts.</li>
+        </ul>
+
+        <div class="row">
+          <div class="col">
+            <ngx-multiselect
+              name="select_1"
+              multiple
+              [(ngModel)]="multiselectValue"
+              [options]="multiselectOptions">
+            </ngx-multiselect>
+          </div>
+        </div>
 
         <!--ngx-reclamitux-showcase></ngx-reclamitux-showcase-->
 

@@ -1,0 +1,74 @@
+<div class="row">
+  <div class="col-md-4 position-relative">
+    <label *ngIf="tttleSelected || tttleUnselected">{{ tttleSelected }}</label>
+    <div class="card card-left">
+      <ng-template *ngIf="groupedOptions.length" ngFor let-group [ngForOf]="groupedOptions">
+        <div class="pl-2 pr-2 pt-1 pb-1">
+          <strong *ngIf="groupDict">{{ groupDict[group] ? groupDict[group] : group | titlecase }}</strong>
+          <strong *ngIf="!groupDict">{{ group }}</strong>
+        </div>
+        <ng-template ngFor let-option [ngForOf]="options">
+          <div *ngIf="_multiple && option[groupField] == group && state.indexOf(option.id) == -1"
+              class="pl-3 pr-2 pt-1 pb-1"
+              (click)="toggle(option)">
+            {{ option.name }}
+          </div>
+          <div *ngIf="!_multiple && option[groupField] == group && state != option.id"
+              class="pl-3 pr-2 pt-1 pb-1"
+              (click)="toggle(option)">
+            {{ option.name }}
+          </div>
+        </ng-template>
+      </ng-template>
+
+      <ng-template *ngIf="!groupedOptions || groupedOptions.length == 0" ngFor let-option [ngForOf]="options">
+        <div *ngIf="_multiple && state.indexOf(option.id) == -1"
+            class="pl-2 pr-2 pt-1 pb-1"
+            (click)="toggle(option)">
+          {{ option.name }}
+        </div>
+        <div *ngIf="!_multiple && state != option.id"
+            class="pl-2 pr-2 pt-1 pb-1"
+            (click)="toggle(option)">
+          {{ option.name }}
+        </div>
+      </ng-template>
+    </div>
+
+    <div class="buttons-between pr-2">
+      <button title="añade todos los elementos"
+          *ngIf="_multiple"
+          [class.disabled]="state.length >= options.length"
+          [disabled]="state.length >= options.length"
+          class="btn btn-link text-d-none"
+          (click)="addAll()"><i class="nb-arrow-right"></i></button>
+
+      <button title="eliminar todos los elementos"
+          [class.disabled]="(_multiple && state.length == 0) || (!_multiple && !state)"
+          [disabled]="(_multiple && state.length == 0) || (!_multiple && !state)"
+          class="btn btn-link d-block text-d-none"
+          (click)="clearAll()"><i class="nb-arrow-left"></i></button>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <label *ngIf="tttleSelected || tttleUnselected">
+      {{ tttleUnselected }}
+    </label>
+
+    <div class="card card-right">
+      <ng-template ngFor let-option [ngForOf]="options">
+        <div *ngIf="_multiple && state && state.indexOf(option.id) !== -1"
+            class="pl-2 pr-2 pt-1 pb-1"
+            (click)="toggle(option)">
+          {{ option.name }}
+        </div>
+        <div *ngIf="!_multiple && state && state == option.id"
+            class="pl-2 pr-2 pt-1 pb-1"
+            (click)="toggle(option)">
+          {{ option.name }}
+        </div>
+      </ng-template>
+    </div>
+  </div>
+</div>

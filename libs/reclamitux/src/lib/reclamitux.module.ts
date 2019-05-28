@@ -6,7 +6,7 @@ import { NbCardModule, NbAccordionModule, NbSelectModule, NbMenuModule, NbAction
 import { ReclamituxShowcaseComponent } from './reclamitux-showcase/reclamitux-showcase.component';
 import { SpinnerComponent } from './spinner/spinner.component';
 import { SpinnerDirective } from './spinner/spinner.directive';
-
+import { MultiselectComponent } from './multiselect/multiselect.component';
 import { SwitchModule } from './switch/switch.module';
 
 @NgModule({
@@ -24,6 +24,7 @@ import { SwitchModule } from './switch/switch.module';
   declarations: [
     ReclamituxShowcaseComponent,
     SpinnerComponent,
+    MultiselectComponent,
     SpinnerDirective
   ],
   exports: [
@@ -32,7 +33,8 @@ import { SwitchModule } from './switch/switch.module';
     NbAccordionModule,
     NbSelectModule,
     SpinnerComponent,
-    SpinnerDirective
+    SpinnerDirective,
+    MultiselectComponent
   ],
   entryComponents: [
     SpinnerComponent

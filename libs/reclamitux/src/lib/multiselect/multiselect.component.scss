@@ -1,0 +1,18 @@
+.card {
+	height: 200px;
+	overflow-y: auto;
+	border: 1px solid #b1b1b1;
+	border-radius: 0;
+}
+
+.buttons-between {
+	position: absolute;
+	right: -1em;
+	top: 50%;
+	margin-top: -1em;
+	z-index: 1;
+}
+
+.text-d-none {
+	text-decoration: none;
+}
